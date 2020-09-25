@@ -1,0 +1,21 @@
+$colors:(
+    primary: #45a29e
+    primary-light: #665599, 
+);
+
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+//px's are for monkey's, rem or relative unit, 1rem= 10px, vw= viewport AND VH= Viewport height. 
+html,
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+.header{
+    
+}
